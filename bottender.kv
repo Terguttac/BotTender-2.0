@@ -1,0 +1,219 @@
+#:kivy 2.1.0
+#:import Factory kivy.factory.Factory
+#: import NoTransition kivy.uix.screenmanager.NoTransition
+
+<Label>:
+    font_size: sp(32)
+    halign: 'center'
+
+<ActionButton>:
+    font_size: sp(18)
+
+<ActionToggleButton>:
+    font_size: sp(18)
+
+
+<ScrollablePopup>:
+	title: ''
+    title_size: 24
+    size_hint: .8, .8
+	ScrollView:
+		GridLayout:
+			id: grid
+			cols: 1
+			size_hint_y: None
+			height: self.minimum_height
+
+<NonScrollablePopup>:
+	title: ''
+    title_size: 24
+    size_hint: .8, .8
+	GridLayout:
+		id: grid
+		cols: 1
+
+
+<Bottender>:
+    orientation: 'vertical'
+    TopBar:
+	ScreenManager:
+		id: sm
+		transition: NoTransition()
+		MyHomeScreen:
+		AvailableCocktailScreen:
+		AllCocktailScreen:
+		MyOptionsScreen:
+		DeleteCocktailScreen:
+		CustomCocktailScreen:
+		CreateNewCocktailScreen:
+		IngredientsHomeScreen:
+		RecipesHomeScreen:
+		PumpConfigScreen:
+		OnHandConfigScreen:
+
+<MyHomeScreen@Screen>:
+	name: 'home'
+	GridLayout:
+		id: grid
+		cols: 2
+
+		Button:
+			id: show_cocktails
+			text:'View\n\nAvailable\n\nCocktails'
+			on_release: app.root.ids.sm.current = 'available_cocktails'
+
+
+		Button:
+			text: 'Pour\n\nCustom\n\nDrink'
+			on_release: app.root.ids.sm.current = 'custom'
+		#Button:
+		#	text: 'Configure Pumps'
+		#	on_release: app.root.ids.sm.current = 'pump_config'
+
+
+
+
+#		Button:
+#			text: 'Additional Settings & Configuration'
+#			on_release: app.root.ids.sm.current = 'options_home'
+
+<MyOptionsScreen@Screen>:
+	name: 'options_home'
+
+	GridLayout:
+		id: grid
+		cols: 2
+
+		Button:
+			text: 'Edit Ingredients'
+			on_release: app.root.ids.sm.current = 'ingredients_home'
+
+		Button:
+			text: 'Edit Recipes'
+			on_release: app.root.ids.sm.current = 'recipes_home'
+
+
+
+<CustomCocktailScreen>:
+    name: 'custom'
+
+    GridLayout:
+        id: outer_grid
+        cols: 1
+        
+        GridLayout:
+            id: grid
+
+<BaseScreen>:
+	GridLayout:
+		id: grid
+		cols: 1
+
+<ScrollableScreen>:
+	ScrollView:
+		#effect_cls: "ScrollEffect"
+		GridLayout:
+			id: grid
+			cols: 1
+			size_hint_y: None
+			height: self.minimum_height
+
+<AvailableCocktailScreen>:
+	name: 'available_cocktails'
+
+<AllCocktailScreen>:
+	name: 'all_cocktails'
+
+<DeleteCocktailScreen>:
+	name: 'delete_recipe'
+
+<IngredientsHomeScreen>:
+	name: 'ingredients_home'
+
+<RecipesHomeScreen>:
+	name: 'recipes_home'
+
+	GridLayout:
+		cols: 2
+
+		Button:
+			text: 'View All Cocktails'
+			on_release: app.root.ids.sm.current = 'all_cocktails'
+		Button:
+			text: 'Delete Cocktail'
+			on_release: app.root.ids.sm.current = 'delete_recipe'
+		Button:
+			text: 'Create New Cocktail'
+			on_release: app.root.ids.sm.current = 'create'
+
+<CreateNewCocktailScreen>:
+    name: 'create'
+
+    GridLayout:
+        id: grid
+        cols: 2
+
+        GridLayout:
+            id: ingredient_grid
+            cols: 1
+
+        GridLayout:
+            id: button_grid
+            cols: 1
+            size_hint_x: .35
+
+<PumpConfigScreen>:
+	name: 'pump_config'
+
+<OnHandConfigScreen>:
+	name: 'on_hand_config'
+
+<TopBar@ActionBar>:
+    ActionView:
+        id: ActionView
+        HiddenIcon_ActionPrevious:
+    
+        ActionButton:
+            text: 'Home'
+            id: home_button
+            on_release:  app.root.ids.sm.current = 'home'
+
+        ActionButton:
+            text: 'Options'
+            id: options_button
+		    background_disabled_normal: self.background_normal
+            on_release: app.root.ids.sm.current = 'options_home'
+            disabled: True
+        
+        ActionButton:
+            text: 'Configure Pumps'
+            id: pump_button
+		    background_disabled_normal: self.background_normal
+            on_release:  app.root.ids.sm.current = 'pump_config'
+            disabled: True
+
+        ActionButton:
+        	text: 'Configure On Hand'
+        	id: on_hand_button
+		    background_disabled_normal: self.background_normal
+        	on_release: app.root.ids.sm.current = 'on_hand_config'
+        	disabled: True
+
+        ActionButton:
+        	size_hint_x: .9
+
+        ActionToggleButton:
+            text: 'Unlock'
+            id: unlock_button
+		    background_down: self.background_normal 
+            on_release: Factory.UnlockPopup().unlock_prompt(unlock_button, options_button, pump_button, on_hand_button)
+
+
+<HiddenIcon_ActionPrevious@ActionPrevious>:
+    title: ''
+    with_previous: False
+    app_icon: ''
+    app_icon_width: 0
+    app_icon_height: 0
+    size_hint_x: None
+    width: len(self.title)

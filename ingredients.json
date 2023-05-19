@@ -1,0 +1,44 @@
+{
+    "spirits": [
+        "whiskey",
+        "vodka",
+        "gin",
+        "tequila",
+        "mezcal",
+        "rum"
+    ],
+    "juices": [
+        "orange juice",
+        "mango juice",
+        "pineapple juice",
+        "grapefruit juice",
+        "lime juice",
+        "lemon juice"
+    ],
+    "bitters": [
+        "Angostura bitters",
+        "Orange bitters",
+        "Chocolate bitters",
+        "Peychaud bitters"
+    ],
+    "others": [
+        "dry vermouth",
+        "sweet vermouth",
+        "grenadine",
+        "white wine",
+        "limoncello",
+        "iced tea",
+        "triple sec",
+        "red wine"
+    ],
+    "garnish": [
+        "cherry",
+        "salt",
+        "mint"
+    ],
+    "soda": [
+        "ginger beer",
+        "7up",
+        "cola"
+    ]
+}

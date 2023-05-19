@@ -1,0 +1,243 @@
+{
+    "Old Fashion": {
+        "whiskey": {
+            "amount": "2",
+            "measurement": "oz",
+            "type": ""
+        },
+        "angostura": {
+            "amount": "2",
+            "measurement": "dashes",
+            "type": ""
+        },
+        "sugar": {
+            "amount": ".5",
+            "measurement": "oz",
+            "type": "garnish"
+        }
+    },
+    "Manhattan": {
+        "whiskey": {
+            "amount": "2",
+            "measurement": "oz",
+            "type": ""
+        },
+        "sweet vermouth": {
+            "amount": "1",
+            "measurement": "oz",
+            "type": ""
+        },
+        "angostura": {
+            "amount": "2",
+            "measurement": "dashes",
+            "type": ""
+        }
+    },
+    "Martini": {
+        "gin": {
+            "amount": "2.5",
+            "measurement": "oz",
+            "type": ""
+        },
+        "dry vermouth": {
+            "amount": ".5",
+            "measurement": "oz",
+            "type": ""
+        }
+    },
+    "Salty Dog": {
+        "gin": {
+            "amount": "2",
+            "measurement": "oz",
+            "type": ""
+        },
+        "grapefruit juice": {
+            "amount": "2",
+            "measurement": "oz",
+            "type": ""
+        }
+    },
+    "Limoncello Iced Tea": {
+        "limoncello": {
+            "amount": "1.5",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "iced tea": {
+            "amount": "3.75",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "lemon juice": {
+            "amount": "0.25",
+            "measurement": "oz",
+            "type": "juices"
+        }
+    },
+    "Dark and Stormy": {
+        "rum": {
+            "amount": "2.0",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "lime juice": {
+            "amount": "0.5",
+            "measurement": "oz",
+            "type": "juices"
+        },
+        "ginger beer": {
+            "amount": "5.0",
+            "measurement": "oz",
+            "type": "soda"
+        }
+    },
+    "Margarita": {
+        "tequila": {
+            "amount": "2.0",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "triple sec": {
+            "amount": "0.5",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "lime juice": {
+            "amount": "1.0",
+            "measurement": "oz",
+            "type": "juices"
+        },
+        "salt": {
+            "amount": "0",
+            "measurement": null,
+            "type": "garnish"
+        }
+    },
+    "Whiskey Sour": {
+        "whiskey": {
+            "amount": "2.0",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "lemon juice": {
+            "amount": "0.75",
+            "measurement": "oz",
+            "type": "juices"
+        },
+        "triple sec": {
+            "amount": "0.25",
+            "measurement": "oz",
+            "type": "others"
+        }
+    },
+    "New York Sour": {
+        "whiskey": {
+            "amount": "2.0",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "lemon juice": {
+            "amount": "1.0",
+            "measurement": "oz",
+            "type": "juices"
+        },
+        "triple sec": {
+            "amount": "0.25",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "red wine": {
+            "amount": "0.5",
+            "measurement": "oz",
+            "type": "others"
+        }
+    },
+    "Lemon Margarita": {
+        "tequila": {
+            "amount": "1.5",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "limoncello": {
+            "amount": "0.75",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "lemon juice": {
+            "amount": "0.75",
+            "measurement": "oz",
+            "type": "juices"
+        },
+        "triple sec": {
+            "amount": "0.25",
+            "measurement": "oz",
+            "type": "others"
+        }
+    },
+    "Tratto Limoncello": {
+        "whiskey": {
+            "amount": "1.5",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "limoncello": {
+            "amount": "1.5",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "dry vermouth": {
+            "amount": "0.5",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "Angostura bitters": {
+            "amount": "1.0",
+            "measurement": "dashes",
+            "type": "bitters"
+        },
+        "Orange bitters": {
+            "amount": "1.0",
+            "measurement": "dashes",
+            "type": "bitters"
+        }
+    },
+    "Devil's Margarita": {
+        "tequila": {
+            "amount": "1.5",
+            "measurement": "oz",
+            "type": "spirits"
+        },
+        "lime juice": {
+            "amount": "1.0",
+            "measurement": "oz",
+            "type": "juices"
+        },
+        "triple sec": {
+            "amount": "0.5",
+            "measurement": "oz",
+            "type": "others"
+        },
+        "red wine": {
+            "amount": "0.5",
+            "measurement": "oz",
+            "type": "others"
+        }
+    },
+    "Old Fashion (Triple Sec)": {
+        "Angostura bitters": {
+            "amount": "2.0",
+            "measurement": "dashes",
+            "type": "bitters"
+        },
+        "whiskey": {
+            "amount": "2.0",
+            "measurement": "dashes",
+            "type": "spirits"
+        },
+        "triple sec": {
+            "amount": "0.25",
+            "measurement": "oz",
+            "type": "others"
+        }
+    }
+}
