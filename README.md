@@ -1,6 +1,8 @@
 # BotTender 2.0
 
-BotTender 2.0 is a cocktail making machine built on a Raspberry Pi featuring a touchscreen interface, editable database of cocktails and ingredients, and an intuitive user interface. With BotTender, you can easily browse and make a variety of cocktails or create custom drinks by selecting the desired ingredients and their quantities.
+BotTender 2.0 is a cocktail making machine built on a Raspberry Pi featuring a touchscreen interface, editable database of cocktails and ingredients, and an intuitive user interface. With BotTender, you can easily browse and make a variety of cocktails or create custom drinks by selecting the desired ingredients and their quantities. BotTender 2.0 is written in Python and uses Kivy for the GUI framework.
+
+Why 2.0? BotTender 2.0 is a complete rewrite of a cocktail making machine I created in 2021.  
 
 ## Features
 
@@ -25,6 +27,10 @@ Before setting up the BotTender 2.0 project, ensure you have the following prere
 To install and set up the BotTender 2.0 project, follow these steps:
 
 1. Clone this repository to your local machine and cd to the cloned directory.
+    - ```
+         git clone https://github.com/Terguttac/BotTender-2.0.git
+         cd BotTender-2.0
+      ```
 2. Open `bottender.py` in a text editor.
 3. If Kivy was installed from source and you wish to use the app fullscreen:
    - Uncomment `#os.environ["KCFG_GRAPHICS_FULLSCREEN"]="auto"` in `bottender.py`.
