@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#Original code written by - https://github.com/hoanhan101/pn532
 
 from pn532.api import PN532
 
