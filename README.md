@@ -39,7 +39,7 @@ To install and set up the BotTender 2.0 project, follow these steps:
 5. If you configure BotTender to autostart at launch you may need to change the `path_to_cocktails` and `path_to_ingredients` variables to full paths.
    - For example, `path_to_cocktails = '/home/YOURUSERNAME/BotTender-2.0/cocktails.json'`
 6. If using an NFC chip to unlock:
-   - Run `./get_key.py` and follow the instructions in the terminal.
+   - Run `python3 get_key.py` and follow the instructions in the terminal.
 7. Run `python3 bottender.py` to start the BotTender application.
 8. Enjoy!
 
