@@ -33,14 +33,15 @@ To install and set up the BotTender 2.0 project, follow these steps:
       ```
 2. Open `bottender.py` in a text editor.
 3. If Kivy was installed from source and you wish to use the app fullscreen:
-   - Uncomment `#os.environ["KCFG_GRAPHICS_FULLSCREEN"]="auto"` in `bottender.py`.
+   - Uncomment `os.environ["KCFG_GRAPHICS_FULLSCREEN"]="auto"`.
 4. If deploying with a touchscreen:
-   - Uncomment `os.environ["KCFG_INPUT_MOUSE"]="False"` in `bottender.py`.
-5. If using an NFC chip to unlock:
+   - Uncomment `os.environ["KCFG_INPUT_MOUSE"]="False"`.
+5. If you configure BotTender to autostart at launch you may need to change the `path_to_cocktails` and `path_to_ingredients` variables to full paths.
+   - For example, path_to_cocktails = '/home/YOURUSERNAME/BotTender-2.0/cocktails.json'
+6. If using an NFC chip to unlock:
    - Run `./get_key.py` and follow the instructions in the terminal.
-7. If you configure BotTender to autostart at launch you may need to change the the `path_to_cocktails.json` and `path_to_ingredients.json` to full paths.
-6. Run `python3 bottender.py` to start the BotTender application.
-7. Enjoy!
+7. Run `python3 bottender.py` to start the BotTender application.
+8. Enjoy!
 
 ## Usage
 
