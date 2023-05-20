@@ -73,7 +73,7 @@ To install and set up the BotTender 2.0 project, follow these steps:
 
 ## Further Explanation / Notes
 
-- **On Hand**: The "On Hand" category allows you to add extra flexibility to the BotTender. By adding an ingredient to the "On Hand" category, you can include it in the list of available cocktails, even if it cannot be pumped. This is useful for ingredients like soda, dry ingredients, bitters, or any ingredient that cannot be easily dispensed through the pumps. BotTender will still consider these ingredients when suggesting cocktails based on the available ingredients.
+- **On Hand**: The "On Hand" category allows you to add extra flexibility to the BotTender. When configured, cocktails with ingredients that are "On Hand" will be made available even though the ingredient can't be pumped. This is useful for ingredients that are incompatible/inconvenient, such as soda/bitters, or if all the pumps are in use. Cocktails that are available with "On Hand" ingredients are displayed in yellow. 
 
 - **Strictness**: BotTender currently does not differentiate between different types of the same spirit, such as bourbon, rye, scotch, or Irish whiskey. This design choice was made to simplify the configuration and deployment process. However, if you want to restrict a cocktail to a specific type of spirit, you can add that specific type as a separate ingredient in the BotTender's ingredient database. For example, if you want an Old Fashioned cocktail to only be available with Rye whiskey, you can add an ingredient called "Whiskey - Rye" to the database and use it in the recipe for the Old Fashioned. This way, BotTender will suggest the cocktail only when "Whiskey - Rye" is available, ensuring the desired spirit type is used.
 
